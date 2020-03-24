@@ -11,7 +11,7 @@ def covid19(bot, event, *args):
         pagearray = json.loads(page.text)
         cases = str(pagearray["cases"])
         deaths = str(pagearray["deaths"])
-        html_text = "<strong>The COVID-19 outbreak internationally has " + cases + " cases and " + deaths + " deaths</strong><br />Original Plugin by KD7T"
+        html_text = "<strong>The COVID-19 outbreak internationally has " + cases + " cases and " + deaths + " deaths</strong><br /><i>Original Plugin by gubareve</i>"
     except:
         html_text = "Unable to get covid-19 data right now"
         logger.exception(html_text)
